@@ -1,0 +1,92 @@
+.topbar {
+  background: #2d2d2d;
+  padding: 0 1.5rem;
+}
+
+.topbar__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.topbar__menu {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar__logo {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+}
+
+.topbar__item {
+  padding: 10px;
+  order: 2;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.active .topbar__item {
+  display: block;
+}
+
+.topbar__logo a,
+.topbar__item a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 5px;
+}
+
+.topbar__logo a:hover,
+.topbar__item a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.topbar__toggle {
+  order: 1;
+  font-size: 1rem;
+}
+
+@media all and (min-width: 700px) {
+  .topbar__menu {
+    justify-content: center;
+  }
+
+  .topbar__logo {
+    flex: 1;
+  }
+
+  .topbar__toggle {
+    float: 1;
+    text-align: right;
+    order: 2;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .topbar__menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+  }
+
+  .topbar__logo {
+    order: 0;
+  }
+
+  .topbar__item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+
+  .topbar__toggle {
+    display: none;
+  }
+}
