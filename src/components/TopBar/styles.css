@@ -1,0 +1,94 @@
+.topbar {
+  background: #2d2d2d;
+  padding: 0 1.5rem;
+}
+
+.topbar__container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.topbar__menu {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar__logo {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+}
+
+.topbar__item {
+  padding: 10px;
+  order: 2;
+  width: 100%;
+  text-align: center;
+  display: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.active .topbar__item {
+  display: block;
+}
+
+.topbar__logo a,
+.topbar__item a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 5px;
+}
+
+.topbar__logo a:hover,
+.topbar__item a:hover {
+  color: #ee7621;
+  text-decoration: none;
+}
+
+.topbar__toggle {
+  order: 1;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+@media all and (min-width: 700px) {
+  .topbar__menu {
+    justify-content: center;
+  }
+
+  .topbar__logo {
+    flex: 1;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .topbar__menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+  }
+
+  .topbar__logo {
+    order: 0;
+  }
+
+  .topbar__item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+    margin-left: 50px;
+  }
+
+  .topbar__toggle {
+    display: none;
+  }
+}
