@@ -2,24 +2,33 @@
   margin-top: 20px;
 }
 
-.home__row {
+.home__posts {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.home__post.double-photo-left,
+.home__post.double-photo-right {
+  flex-basis: 50%;
   margin: 40px 0;
 }
 
-.home__post {
-  flex-basis: 50%;
-}
-
-.home__post2 {
-  margin-left: 30%;
+.home__post.single-photo-left {
+  margin: 40px 0 40px 30%;
   flex-basis: 70%;
   height: 640px;
   align-items: center;
 }
 
-.home__post2 img {
+.home__post.single-photo-left img,
+.home__post.single-photo-right img {
   width: 640px;
+}
+
+.home__post.single-photo-right {
+  margin: 40px 0;
+  flex-basis: 70%;
+  height: 640px;
+  align-items: center;
 }
