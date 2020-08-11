@@ -1,0 +1,42 @@
+.card {
+  background: #fff;
+  min-height: 320px;
+  display: flex;
+}
+
+.card__photo {
+  width: 320px;
+  height: 100%;
+  position: relative;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 80px;
+}
+
+.card__author,
+.card__description {
+  font-size: 1.1rem;
+  line-height: 34px;
+  color: #2d2d2d;
+}
+
+.card__title {
+  font-size: 1.8rem;
+  line-height: 43px;
+  margin: 0.27em 0;
+  color: #f1a10a;
+}
+
+.card__details {
+  position: relative;
+  height: 100%;
+}
+
+.card__icon {
+  right: 40px;
+  bottom: 40px;
+  position: absolute;
+}

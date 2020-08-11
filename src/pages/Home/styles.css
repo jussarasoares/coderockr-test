@@ -1,0 +1,25 @@
+.home {
+  margin-top: 20px;
+}
+
+.home__row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.home__post {
+  flex-basis: 50%;
+}
+
+.home__post2 {
+  margin-left: 30%;
+  flex-basis: 70%;
+  height: 640px;
+  align-items: center;
+}
+
+.home__post2 img {
+  width: 640px;
+}
