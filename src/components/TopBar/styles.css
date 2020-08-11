@@ -4,7 +4,7 @@
 }
 
 .topbar__container {
-  max-width: 1280px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -17,8 +17,10 @@
 }
 
 .topbar__logo {
-  font-size: 20px;
-  padding: 7.5px 10px 7.5px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 3.2rem;
 }
 
 .topbar__item {
@@ -27,6 +29,10 @@
   width: 100%;
   text-align: center;
   display: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
 }
 
 .active .topbar__item {
@@ -43,13 +49,14 @@
 
 .topbar__logo a:hover,
 .topbar__item a:hover {
-  color: #ccc;
+  color: #ee7621;
   text-decoration: none;
 }
 
 .topbar__toggle {
   order: 1;
-  font-size: 1rem;
+  font-size: 2.5rem;
+  color: #fff;
 }
 
 @media all and (min-width: 700px) {
@@ -59,12 +66,6 @@
 
   .topbar__logo {
     flex: 1;
-  }
-
-  .topbar__toggle {
-    float: 1;
-    text-align: right;
-    order: 2;
   }
 }
 
@@ -84,6 +85,7 @@
     position: relative;
     display: block;
     width: auto;
+    margin-left: 50px;
   }
 
   .topbar__toggle {
