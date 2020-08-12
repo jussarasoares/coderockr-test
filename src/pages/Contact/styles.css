@@ -1,0 +1,46 @@
+.contact {
+  max-width: 1024px;
+  margin: 140px auto;
+  background: #fff;
+}
+
+.contact__fieldset {
+  border: 0;
+  padding: 0 2.4rem;
+}
+
+.contact__fieldset h1 {
+  color: #f1a10a;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.contact__fieldset .input + .input,
+.contact__fieldset .input + .textarea {
+  margin-top: 1.4rem;
+}
+
+.contact__submit {
+  width: 100%;
+  padding: 70px;
+  text-align: center;
+}
+
+.contact__submit--button {
+  width: 230px;
+  height: 60px;
+  left: 857px;
+  top: 1400px;
+  background: #2d2d2d;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.contact__submit--button:hover {
+  background-color: #77520d;
+  border: none;
+}

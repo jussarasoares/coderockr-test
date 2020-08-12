@@ -1,0 +1,27 @@
+.textarea {
+  position: relative;
+  padding: 0.2rem 5rem;
+}
+
+.textarea label {
+  font-size: 1.4rem;
+  line-height: 34px;
+  color: #000000;
+}
+
+.textarea textarea {
+  width: 100%;
+  min-height: 200px;
+  margin-top: 0.8rem;
+  outline: 0;
+  padding: 1rem;
+  border: 1px solid #2d2d2d;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.51);
+}
+
+.textarea__error {
+  color: #df6262;
+  margin: 0.5rem;
+}
