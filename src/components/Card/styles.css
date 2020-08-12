@@ -1,19 +1,17 @@
 .card {
   background: #fff;
-  min-height: 320px;
   display: flex;
+  flex-direction: column;
 }
 
 .card__photo {
-  width: 320px;
-  height: 100%;
-  position: relative;
+  width: 100%;
 }
 
 .card__content {
   display: flex;
   flex-direction: column;
-  margin: 35px 80px;
+  margin: 10px 5px;
 }
 
 .card__author,
@@ -36,7 +34,55 @@
 }
 
 .card__icon {
-  right: 40px;
-  bottom: 40px;
-  position: absolute;
+  display: none;
+}
+
+@media all and (min-width: 720px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card__photo {
+    width: 50%;
+  }
+
+  .card__content {
+    margin: 35px 80px;
+    justify-content: center;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .card__content {
+    margin: 0px 40px;
+  }
+}
+
+@media all and (min-width: 1140px) {
+  .card {
+    min-height: 320px;
+  }
+
+  .card__photo {
+    width: 320px;
+    height: 100%;
+    position: relative;
+  }
+
+  .card__content {
+    margin: 0px 40px;
+  }
+
+  .card__icon {
+    right: 40px;
+    bottom: 40px;
+    display: block;
+    position: absolute;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  .card__content {
+    margin: 35px 80px;
+  }
 }
