@@ -34,9 +34,7 @@ function Home() {
         params: { _page: nextPage, _limit: limit },
       })
       .then((response) => {
-        console.log(response.data.length);
         if (response.data.length === 0) {
-          console.log('parou');
           setIsFetching(false);
           setStopFetching(true);
           return;
@@ -79,6 +77,7 @@ function Home() {
 
           return (
             <Card
+              key={article.id}
               className={cardClass}
               path={`/post/${article.id}`}
               title={title}
