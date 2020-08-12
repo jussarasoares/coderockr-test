@@ -75,10 +75,13 @@ function Home() {
             .replace(/<\/p>/g, ' ')
             .substr(0, 100)} ...`;
 
+          const title = article.title.replace(/(<([^>]+)>)/gi, '');
+
           return (
             <Card
               className={cardClass}
-              title={article.title}
+              path={`/post/${article.id}`}
+              title={title}
               description={description}
               photo={article.imageUrl}
               author={article.author}

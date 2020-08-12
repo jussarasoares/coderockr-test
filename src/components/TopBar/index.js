@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -16,13 +18,13 @@ function Topbar() {
       <div className="topbar__container">
         <ul className={`topbar__menu ${isOpen ? 'active' : ''}`}>
           <li className="topbar__logo">
-            <a href="/">Rockr Blog</a>
+            <Link to="/">Rockr Blog</Link>
           </li>
           <li className="topbar__item">
-            <a href="/posts">Posts</a>
+            <Link to="/">Posts</Link>
           </li>
           <li className="topbar__item">
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li className="topbar__toggle" onClick={onToggle}>
             <FontAwesomeIcon icon={faBars} />

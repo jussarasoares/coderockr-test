@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 import './styles.css';
+import { Link } from 'react-router-dom';
 
-function Card({ className, title, description, photo, author }) {
+function Card({ className, title, description, photo, author, path }) {
   return (
     <div className={`card ${className}`}>
       <img className="card__photo" alt={author} src={photo} />
@@ -14,7 +15,9 @@ function Card({ className, title, description, photo, author }) {
         <span className="card__description">{description}</span>
       </div>
       <div className="card__details">
-        <FontAwesomeIcon icon={faAngleDoubleRight} className="card__icon" />
+        <Link to={path}>
+          <FontAwesomeIcon icon={faAngleDoubleRight} className="card__icon" />
+        </Link>
       </div>
     </div>
   );
