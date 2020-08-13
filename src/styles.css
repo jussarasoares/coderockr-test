@@ -1,3 +1,13 @@
+:root {
+  --color-primary: #2d2d2d;
+  --color-secundary: #fff;
+  --color-button: #f1a10a;
+  --color-button-hover: #77520d;
+  --color-text-hover: #ee7621;
+  --color-form-field: #000;
+  --color-error: #df6262;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

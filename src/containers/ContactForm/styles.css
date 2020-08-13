@@ -19,12 +19,12 @@
   height: 60px;
   left: 857px;
   top: 1400px;
-  background: #2d2d2d;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-secundary);
   border-radius: 4px;
 }
 
 .contact__submit--button:hover {
-  background-color: #77520d;
+  background-color: var(--color-button-hover);
   border: none;
 }

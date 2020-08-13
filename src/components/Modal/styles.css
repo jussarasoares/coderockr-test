@@ -1,6 +1,6 @@
 .modal {
   position: absolute;
-  background-color: #fff;
+  background-color: var(--color-secundary);
 }
 
 .modal__overlay {
@@ -37,7 +37,7 @@
 }
 
 .modal__title {
-  color: #f1a10a;
+  color: var(--color-button);
   font-size: 2rem;
   font-weight: bold;
   text-align: center;

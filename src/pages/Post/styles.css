@@ -1,7 +1,7 @@
 .post {
   max-width: 1024px;
   margin: 100px 0;
-  background: #fff;
+  background: var(--color-secundary);
 }
 
 .post_header {
@@ -27,14 +27,14 @@
 .post__date {
   font-size: 1.1rem;
   line-height: 34px;
-  color: #2d2d2d;
+  color: var(--color-primary);
 }
 
 .post__title {
   font-size: 1.8rem;
   line-height: 43px;
   margin: 0.27em 0;
-  color: #f1a10a;
+  color: var(--color-button);
 }
 
 .post__content {

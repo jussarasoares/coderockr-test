@@ -1,5 +1,5 @@
 .card {
-  background: #fff;
+  background: var(--color-secundary);
   display: flex;
   flex-direction: column;
 }
@@ -18,14 +18,14 @@
 .card__description {
   font-size: 1.1rem;
   line-height: 34px;
-  color: #2d2d2d;
+  color: var(--color-primary);
 }
 
 .card__title {
   font-size: 1.6rem;
   line-height: 43px;
   margin: 0.27em 0;
-  color: #f1a10a;
+  color: var(--color-button);
 }
 
 .card__details {
@@ -34,7 +34,7 @@
 }
 
 .card__details a {
-  color: #2d2d2d;
+  color: var(--color-primary);
 }
 
 .card__icon {

@@ -1,5 +1,5 @@
 .topbar {
-  background: #2d2d2d;
+  background: var(--color-primary);
   padding: 0 1.5rem;
   position: fixed;
   top: 0;
@@ -46,13 +46,13 @@
 .topbar__toggle {
   order: 1;
   font-size: 2.5rem;
-  color: #fff;
+  color: var(--color-secundary);
 }
 
 .topbar__logo a,
 .topbar__item a,
 .topbar__item button {
-  color: #fff;
+  color: var(--color-secundary);
   text-decoration: none;
   display: block;
   padding: 15px 5px;
@@ -63,7 +63,7 @@
 .topbar__item a:hover,
 .topbar__item button:hover,
 .topbar__toggle:hover {
-  color: #ee7621;
+  color: var(--color-text-hover);
   text-decoration: none;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .topbar__newpost a {
-  background: #f1a10a;
+  background: var(--color-text-hover);
   border-radius: 70px;
   font-size: 22px;
   line-height: 20px;
@@ -85,7 +85,7 @@
 }
 
 .topbar__newpost a:hover {
-  color: #2d2d2d;
+  color: var(--color-primary);
 }
 
 @media all and (min-width: 720px) {
