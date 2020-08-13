@@ -43,6 +43,12 @@
   display: block;
 }
 
+.topbar__toggle {
+  order: 1;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
 .topbar__logo a,
 .topbar__item a,
 .topbar__item button {
@@ -55,7 +61,8 @@
 
 .topbar__logo a:hover,
 .topbar__item a:hover,
-.topbar__item button:hover {
+.topbar__item button:hover,
+.topbar__toggle:hover {
   color: #ee7621;
   text-decoration: none;
 }
@@ -66,12 +73,6 @@
   background: none;
   border: none;
   outline: none;
-}
-
-.topbar__toggle {
-  order: 1;
-  font-size: 2.5rem;
-  color: #fff;
 }
 
 @media all and (min-width: 720px) {
