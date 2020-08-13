@@ -44,17 +44,28 @@
 }
 
 .topbar__logo a,
-.topbar__item a {
+.topbar__item a,
+.topbar__item button {
   color: #fff;
   text-decoration: none;
   display: block;
   padding: 15px 5px;
+  width: 100%;
 }
 
 .topbar__logo a:hover,
-.topbar__item a:hover {
+.topbar__item a:hover,
+.topbar__item button:hover {
   color: #ee7621;
   text-decoration: none;
+}
+
+.topbar__item button,
+.topbar__item button:hover,
+.topbar__item button:focus {
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .topbar__toggle {

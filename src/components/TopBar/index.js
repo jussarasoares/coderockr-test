@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
-
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { useModal } from 'react-modal-hook';
 
 import './styles.css';
 
+import Modal from '../../components/Modal';
+import ContactForm from '../../containers/ContactForm';
+
 function Topbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showModal, hideModal] = useModal(() => (
+    <Modal title="Contact" onClose={hideModal}>
+      <ContactForm onCallback={hideModal} />
+    </Modal>
+  ));
 
   function onToggle() {
     setIsOpen(!isOpen);
@@ -24,7 +32,9 @@ function Topbar() {
             <Link to="/">Posts</Link>
           </li>
           <li className="topbar__item">
-            <Link to="/contact">Contact</Link>
+            <button type="link" onClick={showModal}>
+              Contact
+            </button>
           </li>
           <li className="topbar__toggle" onClick={onToggle}>
             <FontAwesomeIcon icon={faBars} />
