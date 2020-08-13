@@ -9,6 +9,7 @@ import './styles.css';
 import TopBar from './components/TopBar';
 import Home from './pages/Home';
 import Post from './pages/Post';
+import NewPost from './pages/NewPost';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/post/:id" exact component={Post} />
+          <Route path="/new-post" exact component={NewPost} />
           {/* <Route component={Default} /> */}
         </Switch>
         <ToastContainer

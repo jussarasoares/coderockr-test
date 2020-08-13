@@ -75,6 +75,19 @@
   outline: none;
 }
 
+.topbar__newpost a {
+  background: #f1a10a;
+  border-radius: 70px;
+  font-size: 22px;
+  line-height: 20px;
+  padding: 10px 15px;
+  margin: 12px 0;
+}
+
+.topbar__newpost a:hover {
+  color: #2d2d2d;
+}
+
 @media all and (min-width: 720px) {
   .topbar__menu {
     justify-content: center;

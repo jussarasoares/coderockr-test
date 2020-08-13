@@ -36,6 +36,9 @@ function Topbar() {
               Contact
             </button>
           </li>
+          <li className="topbar__item topbar__newpost">
+            <Link to="/new-post">New Post</Link>
+          </li>
           <li className="topbar__toggle" onClick={onToggle}>
             <FontAwesomeIcon icon={faBars} />
           </li>
