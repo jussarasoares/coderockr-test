@@ -1,0 +1,84 @@
+.card {
+  background: var(--color-secundary);
+  display: flex;
+  flex-direction: column;
+}
+
+.card__photo {
+  width: 100%;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+}
+
+.card__author,
+.card__description {
+  font-size: 1.1rem;
+  line-height: 34px;
+  color: var(--color-primary);
+}
+
+.card__title {
+  font-size: 1.6rem;
+  line-height: 43px;
+  margin: 0.27em 0;
+  color: var(--color-button);
+}
+
+.card__details {
+  position: relative;
+  height: 100%;
+}
+
+.card__details a {
+  color: var(--color-primary);
+}
+
+.card__icon {
+  right: 40px;
+  bottom: 40px;
+  display: block;
+  position: absolute;
+}
+
+@media all and (min-width: 720px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card__photo {
+    width: 50%;
+  }
+
+  .card__content {
+    padding: 35px 80px;
+    justify-content: center;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .card__content {
+    padding: 0px 40px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .card {
+    min-height: 320px;
+  }
+
+  .card__photo {
+    width: 320px;
+    height: 100%;
+    position: relative;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  .card__content {
+    padding: 35px 80px;
+  }
+}

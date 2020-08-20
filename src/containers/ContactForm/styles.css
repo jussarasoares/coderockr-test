@@ -1,0 +1,30 @@
+.contact__fieldset {
+  border: 0;
+  padding: 0 2.4rem;
+}
+
+.contact__fieldset .input + .input,
+.contact__fieldset .input + .textarea {
+  margin-top: 1rem;
+}
+
+.contact__submit {
+  width: 100%;
+  padding: 70px;
+  text-align: center;
+}
+
+.contact__submit--button {
+  width: 230px;
+  height: 60px;
+  left: 857px;
+  top: 1400px;
+  background: var(--color-primary);
+  color: var(--color-secundary);
+  border-radius: 4px;
+}
+
+.contact__submit--button:hover {
+  background-color: var(--color-button-hover);
+  border: none;
+}

@@ -1,0 +1,11 @@
+.notFound {
+  max-width: 1024px;
+  margin: 140px auto;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-secundary);
+}
+
+.notFound img {
+  width: 100%;
+}

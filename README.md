@@ -1,5 +1,7 @@
 # :metal: Rockr Blog
 
+![RockrBlog](./docs/screenshots/RockrBlog.gif)
+
 ## Coderockr Test
 
 <p>
